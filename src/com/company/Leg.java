@@ -1,6 +1,7 @@
 package com.company;
 
 import java.awt.*;
+import java.awt.event.KeyEvent;
 
 public class Leg {
 
@@ -48,14 +49,12 @@ public class Leg {
         g.fillRect(this.x, this.y, this.width, this.height);
 
     }
-    public void  moveRight(){
-        x+=2;
-    }
-    public void  moveLeft(){
+    public void moveRight(int key) {
+        if (key == KeyEvent.VK_RIGHT)
+            this.x+=2;
+        if(key == KeyEvent.VK_SPACE)
+            this.x+=5;
+    }    public void  moveLeft(){
         x-=2;
-    }
-    public void moveDown() { y++; }
-    public void moveUp() {
-        y--;
     }
 }

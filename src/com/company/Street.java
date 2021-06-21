@@ -7,7 +7,6 @@ public class Street {
             lain13, lain14, lain15, lain16, lain17,
             crosswalk_1, crosswalk_2, crosswalk_3, crosswalk_4, crosswalk_5, crosswalk_6, crosswalk_7, crosswalk_8;
     private Grass grass_r, grass_l;
-    private Sky sky;
     private Red red1, red2, red3, red4, red5, red6;
     private White white1, white2, white3, white4;
     private Yellow yellow;
@@ -15,10 +14,10 @@ public class Street {
 
     public Street() {
 
-//crass
+        //Grass
         this.grass_r = new Grass();
         this.grass_l = new Grass();
-//sideWalk
+        //sideWalk
         this.red1 = new Red();
         this.red2 = new Red();
         this.red3 = new Red();
@@ -64,12 +63,12 @@ public class Street {
         grass_r.setY(0);
         grass_r.setWidth(Def.GRASS_WIDTH);
         grass_r.setHeight(Def.WINDOW_HEIGHT);
-        grass_l.setX(Def.WINDOW_WIDTH - 468);
+        grass_l.setX(Def.WINDOW_WIDTH -Def.GRASS_WIDTH);
         grass_l.setY(0);
         grass_l.setWidth(Def.GRASS_WIDTH);
         grass_l.setHeight(Def.WINDOW_HEIGHT);
         red1.setX(grass_l.getWidth());
-        red1.setY(10);
+        red1.setY(0);
         red1.setWidth(Def.COLOR_WIDTH);
         red1.setHeight(Def.COLOR_HEIGHT);
         white1.setX(red1.getX());
@@ -89,7 +88,7 @@ public class Street {
         red3.setHeight(Def.COLOR_HEIGHT);
         red3.setWidth(Def.COLOR_WIDTH);
         red4.setX(grass_l.getX() - red1.getWidth());
-        red4.setY(10);
+        red4.setY(0);
         red4.setWidth(Def.COLOR_WIDTH);
         red4.setHeight(Def.COLOR_HEIGHT);
         white3.setX(grass_l.getX() - red1.getWidth());

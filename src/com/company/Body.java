@@ -2,6 +2,7 @@ package com.company;
 
 
 import java.awt.*;
+import java.awt.event.KeyEvent;
 
 public class Body {
 
@@ -44,26 +45,20 @@ public class Body {
 
 
     public void paint(Graphics g) {
-        g.setColor(Color.BLUE);
+        g.setColor(new Color(0x277904));
         g.fillRect(this.x, this.y, this.width, this.height);
-
     }
 
-    public void moveRight() {
-        x+=2;
+    public void moveRight(int key) {
+        if (key == KeyEvent.VK_RIGHT)
+            this.x+=2;
+        if(key == KeyEvent.VK_SPACE)
+            this.x+=5;
     }
-
     public void moveLeft() {
         x-=2;
     }
 
-    public void moveDown() {
-        y++;
-    }
-
-    public void moveUp() {
-        y--;
-    }
 
 }
 

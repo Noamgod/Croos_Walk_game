@@ -2,7 +2,7 @@ package com.company;
 
 public class Def{
     // Window statistics
-    public static final int WINDOW_WIDTH = 1680;
+    public static final int WINDOW_WIDTH = 1280;
     public static final int WINDOW_HEIGHT = 650;
     //Body statistics
     public static final int BODY_X =25;
@@ -23,7 +23,7 @@ public class Def{
     public static final int COLOR_WIDTH=10;
     public static final int YELLOW_WIDTH=10;
     public static final int YELLOW_HEIGHT=WINDOW_HEIGHT;
-    public static final int YELLOW_X=(WINDOW_WIDTH-YELLOW_WIDTH-390)/2;
+    public static final int YELLOW_X=(WINDOW_WIDTH-YELLOW_WIDTH)/2;
     public static final int YELLOW_Y=0;
     public static final int GRASS_WIDTH = 80;
     public static final int CROSS_WALK_WIDTH =80;

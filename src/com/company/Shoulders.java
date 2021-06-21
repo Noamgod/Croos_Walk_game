@@ -1,6 +1,7 @@
 package com.company;
 
 import java.awt.*;
+import java.awt.event.KeyEvent;
 
 public class Shoulders {
 
@@ -50,18 +51,15 @@ public class Shoulders {
         shoulders.setX(shoulders.getX() + 1);
     }
 
-    public void moveRight() {
-        x+=2;
+    public void moveRight(int key) {
+        if (key == KeyEvent.VK_RIGHT)
+            this.x+=2;
+        if(key == KeyEvent.VK_SPACE)
+            this.x+=5;
     }
 
     public void moveLeft() {
         x-=2;
     }
 
-    public void moveUp() {
-        y--;
-    }
-    public void moveDown() {
-        y++;
-    }
 }
