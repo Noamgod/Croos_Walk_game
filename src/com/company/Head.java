@@ -9,6 +9,7 @@ public class Head {
     private int width;
     private int height;
 
+
     public int getX() {
         return x;
     }

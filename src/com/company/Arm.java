@@ -2,12 +2,13 @@ package com.company;
 
 
 import java.awt.*;
+import java.awt.event.KeyEvent;
 
-    public class Arm {
-        private int x;
-        private int y;
-        private int height;
-        private int width;
+public class Arm {
+    private int x;
+    private int y;
+    private int height;
+    private int width;
 
     public int getX() {
         return x;
@@ -48,9 +49,12 @@ import java.awt.*;
 
     }
 
-        public void moveRight() {
-            this.x+=2;
-        }
+    public void moveRight(int key) {
+        if (key == KeyEvent.VK_RIGHT)
+            this.x += 2;
+        if (key == KeyEvent.VK_SPACE)
+            this.x += 5;
+    }
 
     public void moveLeft() {
         x -= 2;
