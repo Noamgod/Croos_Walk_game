@@ -50,6 +50,7 @@ public class Body {
     }
 
     public void moveRight(int key) {
+
         if (key == KeyEvent.VK_RIGHT)
             this.x+=2;
         if(key == KeyEvent.VK_SPACE)
@@ -58,6 +59,7 @@ public class Body {
     public void moveLeft() {
         x-=2;
     }
+
 
 
 }

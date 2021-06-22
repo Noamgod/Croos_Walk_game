@@ -53,7 +53,7 @@ public class Panel extends JPanel {
         font = g.getFont().deriveFont(220.0f);
         g.setFont(font);
         g.setColor(new Color(0xD00AEF02));
-        g.drawString("You Win", Def.WINDOW_WIDTH / 7, Def.WINDOW_HEIGHT / 2 + 100);
+        g.drawString("You Win", Def.WINDOW_WIDTH /7, Def.WINDOW_HEIGHT / 2 );
         this.g = g;
     }
 

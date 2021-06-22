@@ -29,7 +29,8 @@ public class PlayerMovement implements KeyListener {
                 this.player.moveRight(key);
                 break;
             case KeyEvent.VK_LEFT:
-                this.player.moveLeft();
+                if(player.arm_l.getX()>0){
+                this.player.moveLeft();}
             case KeyEvent.VK_ENTER:
 
         }
